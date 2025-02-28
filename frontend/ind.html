@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Distribution Dashboard</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="ind.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#">Shake Hand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="sdg.html">SDG</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Dashboard</a></li>
+                </ul>
+                <div class="ms-3">
+                    <a href="profile.html" class="btn btn-outline-dark me-2"><i class="fa-solid fa-user"></i> Profile</a>
+                    <a href="logout.html" class="btn btn-dark"><i class="fa-solid fa-sign-out"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Space for Fixed Navbar -->
+    <div class="space"></div>
+
+    <!-- Dashboard Container -->
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- Left Section: Quick Stats -->
+            <div class="col-lg-3">
+                <div class="card stat-card">
+                    <h5><i class="fa-solid fa-utensils"></i> Meals Served</h5>
+                    <p>12,345+</p>
+                </div>
+                <div class="card stat-card">
+                    <h5><i class="fa-solid fa-handshake"></i> NGOs Available</h5>
+                    <p>23</p>
+                </div>
+                <div class="card stat-card">
+                    <h5><i class="fa-solid fa-hand-holding-heart"></i> Requests Fulfilled</h5>
+                    <p>5,678</p>
+                </div>
+            </div>
+
+            <!-- Middle Section: NGOs Near You -->
+            <div class="col-lg-6">
+                <h3 class="section-title">Nearby Food Distribution NGOs</h3>
+                <div class="ngo-list">
+                    <div class="ngo-card">
+                        <h5>Helping Hands NGO</h5>
+                        <p>📍 Varanasi, UP</p>
+                        <a href="#" class="btn btn-primary">Donate Food</a>
+                    </div>
+                    <div class="ngo-card">
+                        <h5>Care for All Foundation</h5>
+                        <p>📍 Lucknow, UP</p>
+                        <a href="#" class="btn btn-primary">Donate Food</a>
+                    </div>
+                    <div class="ngo-card">
+                        <h5>Hope & Serve</h5>
+                        <p>📍 Delhi</p>
+                        <a href="#" class="btn btn-primary">Donate Food</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Upcoming Events -->
+            <div class="col-lg-3">
+                <h3 class="section-title">Upcoming Food Drives</h3>
+                <ul class="event-list">
+                    <li>📅 Jan 15 - Free Meal Drive (Lucknow)</li>
+                    <li>📅 Jan 20 - Community Kitchen (Delhi)</li>
+                    <li>📅 Jan 25 - Food for Homeless (Varanasi)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

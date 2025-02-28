@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SDGs - Food for All</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sdg.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body><div class="top-space"></div>
+
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-dark" href="#">Shake Hand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="sdg.html">SDG</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="zero.html">Zero Hunger</a></li>
+            </ul>
+            <div class="ms-3">
+                <a href="login.html" class="btn btn-outline-dark me-2">Login</a>
+                <a href="register.html" class="btn btn-dark">Register</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Header Section -->
+    <header class="sdg-header"></header>
+
+    <!-- SDG Overview Section -->
+    <div class="container my-5 text-center">
+        <h2 class="section-title">What are the SDGs?</h2>
+        <p class="fs-5">
+            The Sustainable Development Goals (SDGs) are a global initiative by the United Nations aimed at addressing poverty, inequality, climate change, and food security.
+            Launched in 2015, these 17 goals serve as a roadmap for creating a sustainable and equitable world for future generations. The SDGs are interconnected, meaning progress in one goal often supports progress in others.
+        </p>
+        <p class="fs-5">
+            The goals are designed to tackle the most pressing global challenges, including environmental degradation, economic inequality, and social injustice. By 2030, the UN aims to achieve these goals through collective action by governments, businesses, and individuals.
+        </p>
+    </div>
+
+    <!-- SDG Grid Section -->
+    <div class="container my-5">
+        <h2 class="section-title text-center">The 17 Sustainable Development Goals</h2>
+        <p class="fs-5 text-center mb-4">
+            Below is a list of the 17 SDGs, each representing a critical area of focus for global development. These goals are a call to action for all countries to promote prosperity while protecting the planet.
+        </p>
+        
+        <div class="row g-4">
+            <!-- Loop through the SDGs -->
+            <script>
+                const sdgs = [
+                    { num: 1, name: "No Poverty", info: "End poverty in all its forms everywhere." },
+                    { num: 2, name: "Zero Hunger", info: "End hunger, achieve food security and improved nutrition, and promote sustainable agriculture." },
+                    { num: 3, name: "Good Health & Well-Being", info: "Ensure healthy lives and promote well-being for all at all ages." },
+                    { num: 4, name: "Quality Education", info: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all." },
+                    { num: 5, name: "Gender Equality", info: "Achieve gender equality and empower all women and girls." },
+                    { num: 6, name: "Clean Water & Sanitation", info: "Ensure availability and sustainable management of water and sanitation for all." },
+                    { num: 7, name: "Affordable & Clean Energy", info: "Ensure access to affordable, reliable, sustainable, and modern energy for all." },
+                    { num: 8, name: "Decent Work & Economic Growth", info: "Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all." },
+                    { num: 9, name: "Industry, Innovation & Infrastructure", info: "Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation." },
+                    { num: 10, name: "Reduced Inequalities", info: "Reduce inequality within and among countries." },
+                    { num: 11, name: "Sustainable Cities & Communities", info: "Make cities and human settlements inclusive, safe, resilient, and sustainable." },
+                    { num: 12, name: "Responsible Consumption & Production", info: "Ensure sustainable consumption and production patterns." },
+                    { num: 13, name: "Climate Action", info: "Take urgent action to combat climate change and its impacts." },
+                    { num: 14, name: "Life Below Water", info: "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development." },
+                    { num: 15, name: "Life on Land", info: "Protect, restore, and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss." },
+                    { num: 16, name: "Peace, Justice & Strong Institutions", info: "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all, and build effective, accountable, and inclusive institutions at all levels." },
+                    { num: 17, name: "Partnerships for the Goals", info: "Strengthen the means of implementation and revitalize the global partnership for sustainable development." }
+                ];
+
+                document.write('<div class="row row-cols-1 row-cols-md-3 g-4">');
+                sdgs.forEach(sdg => {
+                    document.write(`
+                        <div class="col">
+                            <div class="card shadow-sm sdg-card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">${sdg.num}. ${sdg.name}</h5>
+                                    <p class="card-info">${sdg.info}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `);
+                });
+                document.write('</div>');
+            </script>
+        </div>
+    </div>
+
+    <!-- Zero Hunger Initiative Section -->
+    <div class="container my-5">
+        <h2 class="section-title text-center">How We Support SDG 2: Zero Hunger</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="fs-5">
+                    Zero Hunger (SDG 2) is one of the most urgent global challenges.  
+                    Our platform actively contributes by:
+                </p>
+                <ul class="fs-5">
+                    <li>Connecting food donors with those in need.</li>
+                    <li>Helping NGOs efficiently collect and distribute food.</li>
+                    <li>Encouraging businesses and communities to participate.</li>
+                    <li>Promoting sustainable food practices.</li>
+                </ul>
+                <p class="fs-5">
+                    We believe that achieving Zero Hunger requires a collaborative effort. By leveraging technology and community engagement, we aim to reduce food waste and ensure that everyone has access to nutritious meals.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://cropin.com/hs-fs/hubfs/cropin_2021/a-blog-missing/zero-hunger-info%2014967.jpg?width=1533" 
+                     alt="Zero Hunger Initiative" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="container my-5 text-center">
+        <h2 class="section-title">Join Us in Making a Difference</h2>
+        <p class="fs-5">
+            The Sustainable Development Goals are a shared vision for a better future. Whether you're an individual, business, or organization, you can contribute to achieving these goals. Start by supporting initiatives like Zero Hunger and spreading awareness about the SDGs.
+        </p>
+        <a href="register.html" class="btn btn-primary btn-lg">Get Involved</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

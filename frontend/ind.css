@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Space for fixed navbar */
+.space {
+    height: 80px;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 10px 0;
+}
+
+/* Stat Cards */
+.stat-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.stat-card h5 {
+    color: #343a40;
+    font-size: 18px;
+}
+
+.stat-card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* NGO List */
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ngo-list {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ngo-card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ngo-card h5 {
+    color: #343a40;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ngo-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.ngo-card .btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+}
+
+.ngo-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Event List */
+.event-list {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-list li {
+    list-style: none;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+
+
